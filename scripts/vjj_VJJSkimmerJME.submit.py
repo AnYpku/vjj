@@ -49,6 +49,8 @@ MCsamples = ['GJets_SM_5f', #Signal
     'ZGTo2LG',
     'WGToLNuG',
     'LNuAJJ',
+    'WGamma',
+    'ZGamma',
     'ST_s',
     'ST_t'
 ]
