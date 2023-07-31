@@ -38,14 +38,6 @@ class ElectronSelector(ScaleFactorBase, ObjectSelectorBase):
         for k in eleSFSources[self.era]:
             url,obj=eleSFSources[self.era][k]
             self.addSFFromSource(k,url,obj)
-#        for k in eleSFSources[self.era]:
-#            if 'hlt' not in k:
-#               url=[eleSFSources[self.era][k][0]]
-#               obj=[eleSFSources[self.era][k][1]]
-#               self.addSFFromSource(k,url,obj)
-#            else:
-#               url=[eleSFSources[self.era][k][0],eleSFSources[self.era][k][2],eleSFSources[self.era][k][4],eleSFSources[self.era][k][6]]
-#               obj=[eleSFSources[self.era][k][1],eleSFSources[self.era][k][3],eleSFSources[self.era][k][5],eleSFSources[self.era][k][7]]
 
     def collection_name(self):
         return "Electron"
