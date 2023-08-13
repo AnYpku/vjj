@@ -1,8 +1,8 @@
 executable          = /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts/vjj_VJJSkimmerJME.sh
-arguments           = -c $(CAMPAIGN) -d $(DATASET) --nfilesperchunk 1 --chunkindex $(chunkid) -o .//myCampaign_syst/GG_all/TEST/
-output              = condor_myCampaign_syst_GG_all2017_16Jan2023_14h17m43/$(ClusterId).$(ProcId).out
-error               = condor_myCampaign_syst_GG_all2017_16Jan2023_14h17m43/$(ClusterId).$(ProcId).err
-log                 = condor_myCampaign_syst_GG_all2017_16Jan2023_14h17m43/$(ClusterId).log
+arguments           = -c $(CAMPAIGN) -d $(DATASET) --nfilesperchunk 1 --chunkindex $(chunkid) -o .//myCampaign_syst/GG_all/TEST/ -S 22
+output              = condor_myCampaign_syst_GG_all2017_27Apr2023_12h30m33/$(ClusterId).$(ProcId).out
+error               = condor_myCampaign_syst_GG_all2017_27Apr2023_12h30m33/$(ClusterId).$(ProcId).err
+log                 = condor_myCampaign_syst_GG_all2017_27Apr2023_12h30m33/$(ClusterId).log
 +JobFlavour         = "tomorrow"
 transfer_executable = False
 requirements        = ( (OpSysAndVer =?= "CentOS7") || (OpSysAndVer =?= "SLC6") )
@@ -52,5 +52,4 @@ queue OUTPUT CAMPAIGN DATASET,chunkid from (
 	DiPhotonJetsBox_MGG-80toInf_ myCampaign_syst/GG_all /DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM 34
 	DiPhotonJetsBox_MGG-80toInf_ myCampaign_syst/GG_all /DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM 35
 	DiPhotonJetsBox_MGG-80toInf_ myCampaign_syst/GG_all /DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM 36
-	DiPhotonJetsBox_MGG-80toInf_ myCampaign_syst/GG_all /DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM 37
 )

@@ -1,8 +1,8 @@
 executable          = /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts/vjj_VJJSkimmerJME.sh
-arguments           = -c $(CAMPAIGN) -d $(DATASET) --nfilesperchunk 1 --chunkindex $(chunkid) -o .//myCampaign_syst/GJets_SM_4f_all/TEST/
-output              = condor_myCampaign_syst_GJets_SM_4f_all2016_16Jan2023_13h57m45/$(ClusterId).$(ProcId).out
-error               = condor_myCampaign_syst_GJets_SM_4f_all2016_16Jan2023_13h57m45/$(ClusterId).$(ProcId).err
-log                 = condor_myCampaign_syst_GJets_SM_4f_all2016_16Jan2023_13h57m45/$(ClusterId).log
+arguments           = -c $(CAMPAIGN) -d $(DATASET) --nfilesperchunk 1 --chunkindex $(chunkid) -o .//myCampaign_syst/GJets_SM_4f_all/TEST/ -S 22
+output              = condor_myCampaign_syst_GJets_SM_4f_all2016_27Apr2023_11h36m55/$(ClusterId).$(ProcId).out
+error               = condor_myCampaign_syst_GJets_SM_4f_all2016_27Apr2023_11h36m55/$(ClusterId).$(ProcId).err
+log                 = condor_myCampaign_syst_GJets_SM_4f_all2016_27Apr2023_11h36m55/$(ClusterId).log
 +JobFlavour         = "tomorrow"
 transfer_executable = False
 requirements        = ( (OpSysAndVer =?= "CentOS7") || (OpSysAndVer =?= "SLC6") )

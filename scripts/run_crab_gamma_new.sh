@@ -1,0 +1,31 @@
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8_2018_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2018
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8_2018_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2018
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2018_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2018
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8_2018_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2018
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8_2017_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2017
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8_2017_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2017
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2017_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2017
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8_2017_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2017
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1 Data.inputDataset=/G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1_preVFP Data.inputDataset=/G1Jet_LHEGpT-150To250_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODAPVv9-106X_mcRun2_asymptotic_preVFP_v11_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1_preVFP Data.inputDataset=/G1Jet_LHEGpT-250To400_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODAPVv9-106X_mcRun2_asymptotic_preVFP_v11_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1_preVFP Data.inputDataset=/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODAPVv9-106X_mcRun2_asymptotic_preVFP_v11_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016
+
+crab submit --config=auto_crab_cfg.py General.requestName=G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8_2016_ext1_v1_preVFP Data.inputDataset=/G1Jet_LHEGpT-675ToInf_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODAPVv9-106X_mcRun2_asymptotic_preVFP_v11_ext1-v1/NANOAODSIM General.workArea=/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/crab/gamma_new/crab_2016

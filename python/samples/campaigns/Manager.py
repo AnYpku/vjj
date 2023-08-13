@@ -156,7 +156,7 @@ class Manager():
     def get_dataset_info(self, ds , just_ok_files = True):
         for year in self.AllInfo:
             for sample in self.AllInfo[year]:
-#                print(sample)
+                print("sample",self.AllInfo[year][sample].keys())
                 for binval in self.AllInfo[year][sample]:
 #                    print(binval)
                     if binval == 'weights':

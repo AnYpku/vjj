@@ -1,6 +1,6 @@
 # id total_number
-dir=/eos/user/y/yian/AJJ_analysis/DoubleEG_myCampaign_ee_syst/DoubleEGData_all_2017_6747549
-script=DoubleEG_myCampaign_ee_syst_DoubleEGData_all2017_vjj_VJJSkimmerJME
+dir=/eos/user/y/yian/AJJ_analysis/DYJetsToLL_M-50_TuneCP5_myCampaign_mm_syst/DYJetsNLO_18_2018_6879014
+script=DYJetsToLL_M-50_TuneCP5_myCampaign_mm_syst_DYJetsNLO_182018_vjj_VJJSkimmerJME
 ls ${dir}/Skim*.root >file_$1
 cp ${script}.submit ${script}.resubmit
 job="${script}.resubmit"

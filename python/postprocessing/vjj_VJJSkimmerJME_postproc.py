@@ -192,7 +192,7 @@ def main():
 
     #-- Cut formula for event preselection (do not process further uninteresting events) #Do not use, cf. below
     # cut = None
-    cut = 'vjj_njets>=2 && vjj_fs!=0 && vjj_trig>0 && vjj_jj_m>350' #NB: speed up processing
+    cut = 'vjj_njets>=2 && vjj_fs!=0 && vjj_trig>0 && vjj_jj_m>150' #NB: speed up processing
     print('finale state:',opt.finalState)
 
     #-- Call post-processor

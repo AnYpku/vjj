@@ -30,27 +30,24 @@ ROOT.PyConfig.IgnoreCommandLineOptions = True
 #-- Define samples to process #Empty <-> will process all datasets; ['a','b'] <-> will process only datasets whose names contain (a || b)
 
 #Data samples
-DATAsamples = ['SinglePhoton', 'DoubleEG', 'DoubleMuon', 'EGamma',"Photon"]
+DATAsamples = ['DoubleMu','SinglePhoton', 'DoubleEG', 'DoubleMuon', 'EGamma',"Photon"]
 
 #MC samples
-MCsamples = ['GJets_SM_5f', #Signal
-    'GJets_SM_4f',
-    'GJets_Pt', #GJetsSherpa (NLO 2016)
-    'G1Jet_LHEGpT', #GJetsLO
-    #'GJets_Pt-20To100','GJets_Pt-100To200','GJets_Pt-200To500','GJets_Pt-500To1000','GJets_Pt-1000To2000','GJets_Pt-2000To5000', #GJetsSherpaHighStat (2016) 
-    #'GJets_Mjj', #SignalMGPythia500
-    'ToLL_0J','ToLL_1J','ToLL_2J','DY1JetsToLL','DY2JetsToLL','DY3JetsToLL','DY4JetsToLL','DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX','DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8', #DY
+MCsamples = ['DoubleMu','GJets_SM_5f', 'GJets_SM_4f',
+    'G1Jet_LHEGpT', 'GJets_DR',
+#    'DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8',
+    'DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8',#DY
     'DiPhoton', #DiPhoton
-    'WJetsToLNu', 'WJetsToQQ_HT', #WJets
-    'QCD_Pt', #QCD
+    'TTGJets', #ttgamma
     'LLJJ', #LLJJ
     'TTTo2L2Nu', #ttbar
-    'TTGJets', #ttgamma
+    'WJetsToLNu' #WJets
     'ZGTo2LG',
     'WGToLNuG',
     'LNuAJJ',
     'WGamma',
     'ZGamma',
+    'QCD_Pt', #QCD
     'ST_s',
     'ST_t'
 ]
@@ -178,9 +175,11 @@ def main():
 	if data_flag:
             sample_name=n.makeUniqueName().split('_')[0]+'_'
         else:
-	    sample_name=n.makeUniqueName().split('13TeV')[0]
+	    sample_name=n.makeUniqueName().split('13TeV')[0] 
+             
         print('***************TEST*************',opt.dataset,n.makeUniqueName(),' ',str(opt.year))
 
+        print('Matched to process ',any(substring in n.makeUniqueName() for substring in datasetsToProcess))
         if len(datasetsToProcess)>0 and not any(substring in n.makeUniqueName() for substring in datasetsToProcess): 
             print('Ignoring dataset: ', n.makeUniqueName())
             continue #Ignore all non-selected datasets

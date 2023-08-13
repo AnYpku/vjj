@@ -14,6 +14,7 @@ keep HLT_Ele*
 keep HLT_Mu17*
 keep HLT_Iso*Mu*
 keep HLT_Mu50*
+keep HLT_TkMu100*
 keep HLT_PFMET*
 keep *Weight*
 keep Flag_*
