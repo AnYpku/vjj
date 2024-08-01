@@ -4,7 +4,7 @@ import copy
 
 _defaultObjCfg={'min_leptonPt':20,
                 'max_leptonEta':2.5,
-                'min_photonPt':70,
+                'min_photonPt':150,
                 'max_photonEta':2.5,
                 'min_jetPt':15,
                 'max_jetEta':4.7,
@@ -14,29 +14,29 @@ _defaultObjCfg={'min_leptonPt':20,
 }
 
 _defaultVjjCfg={'max_jetEta':4.7,
-                'min_jetPt':20,
+                'min_jetPt':15,
                 'min_jetdr2v':0.4,
                 'min_tagJetPt':30,
                 'min_leadTagJetPt':30,
-                'min_mjj':150}
+                'min_mjj':300}
 
 _defaultGenVjjCfg={'max_jetEta':4.7,
                    'min_jetPt':15,
                    'min_jetdr2v':0.4,
-                   'min_tagJetPt':20,
-                   'min_leadTagJetPt':20,
-                   'min_mjj':120,
+                   'min_tagJetPt':30,
+                   'min_leadTagJetPt':30,
+                   'min_mjj':300,
                    'min_leptonPt':20.,
-                   'max_leptonEta':2.4,
+                   'max_leptonEta':2.5,
                    'max_photonEta':2.4,
-                   'min_photonPt': 70.
+                   'min_photonPt': 150.
 }
 
 
 _defaultVjjSkimCfg={
-                'min_subleadTagJetPt':30,
-                'min_leadTagJetPt':30,
-                'min_mjj':150,
+                'min_subleadTagJetPt':50,
+                'min_leadTagJetPt':50,
+                'min_mjj':300,
 		'min_photonPt_HVPt16': 175,
 		'min_photonPt_HVPt': 200,
 		'min_photonPt_LVPt': 75,
@@ -177,6 +177,7 @@ class VJJEvent:
 
         if len(tagJets)<2 : return False
         if tagJets[0].pt<self.selCfg['min_leadTagJetPt'] : return False
+        if tagJets[1].pt<self.selCfg['min_leadTagJetPt'] : return False
  
          
         self.out.fillBranch(self.pfix+'lead_pt',      tagJets[0].pt)
@@ -264,7 +265,9 @@ class VJJEvent:
         del eventShape
 
         #extra radiation activity
-        extraJets=[j for j in jets if not j in tagJets]
+        #extraJets=[j for j in jets if not j in tagJets]
+        extraJets=[j for j in jets if j != tagJets[0] and j != tagJets[1]]
+        #extraJets=jets[2:]
         nextraj,ncentj=len(extraJets),0
         htsoft,centhtsoft=0.,0.
         minEtaStar=minEta+0.2

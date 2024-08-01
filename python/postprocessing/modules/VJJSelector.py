@@ -290,10 +290,11 @@ class VJJSelector(Module):
             return False
 
         #Signal and other CR VJJ's have no overlap
-
-        if self.fs == 169 and (len(good_eleIdx) > 0 or len(good_phoIdx) > 0): return False
-        elif self.fs == 121 and (len(good_muoIdx) > 0 or len(good_phoIdx) > 0): return False
-        elif self.fs == 22 and (len(good_eleIdx) > 0 or len(good_muoIdx) > 0): return False
+         
+        if abs(self.fs) != 22: return False
+#        if self.fs == 169 and (len(good_eleIdx) > 0 or len(good_phoIdx) > 0): return False
+#        elif self.fs == 121 and (len(good_muoIdx) > 0 or len(good_phoIdx) > 0): return False
+#        elif self.fs == 22 and (len(good_eleIdx) > 0 or len(good_muoIdx) > 0): return False
 #        elif self.fs == 22 and (len(good_eleIdx) > 0 ): return False # For HLT SFs calculation in DoubleMuon data
 
         fsCat,arbTrigCats,boson=bosonArbitration

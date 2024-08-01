@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 import os, sys
-import ROOT
+#import ROOT
 import argparse
-ROOT.PyConfig.IgnoreCommandLineOptions = True
+#ROOT.PyConfig.IgnoreCommandLineOptions = True
 from PhysicsTools.NanoAODTools.postprocessing.framework.postprocessor import PostProcessor
 from PhysicsTools.NanoAODTools.postprocessing.modules.jme.jetmetHelperRun2 import *
 from UserCode.VJJSkimmer.postprocessing.modules.VJJSkimmerJME import *
@@ -22,6 +22,8 @@ from UserCode.VJJSkimmer.postprocessing.modules.VJJEvent import _defaultVjjSkimC
 # //--------------------------------------------
 #-- DEFINE JEC/JER VARIATIONS
 jec_sources = 'Total' #-- JES variations to process #Comma-separated list of variations #'' <-> only nominal / 'Total' <-> only total JES / 'FlavorPureCharm,FlavorPureBottom' <-> process these 2 variations only, ...
+
+jec_sources = 'AbsoluteMPFBias,AbsoluteScale,Fragmentation,PileUpDataMC,PileUpPtBB,PileUpPtHF,PileUpPtRef,RelativeFSR,RelativeJERHF,RelativePtBB,RelativePtHF,RelativeBal,SinglePionECAL,SinglePionHCAL,FlavorQCD,TimePtEta,AbsoluteStat,RelativeJEREC1,RelativeJEREC2,RelativePtEC1,RelativePtEC2,RelativeSample,RelativeStatEC,RelativeStatFSR,RelativeStatHF'
 
 includeTotalJER = True #True <-> also process total Down/Up JER variations; False <-> do not consider JER variations
 # //--------------------------------------------
@@ -171,9 +173,9 @@ def main():
         for jec_source in jec_sources.split(','):
             for shift in ['Up','Down']:
                 jme_vars.append(jec_source+shift)
-            if includeTotalJER:
-                jme_vars.append('JERUp')
-                jme_vars.append('JERDown')
+        if includeTotalJER:
+           jme_vars.append('JERUp')
+           jme_vars.append('JERDown')
         print(colors.fg.lightblue + '\n== JEC variations: ' + colors.reset); print(jme_vars); print('')
 
 

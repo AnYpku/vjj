@@ -1,0 +1,333 @@
+/pool/condor/dir_42702
+/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts
+3.10.0-1160.108.1.el7.x86_64
+slc7_amd64_gcc700
+Linux b7s02p2973.cern.ch 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu Jan 25 16:17:31 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+directory: /pool/condor/dir_42702
+total 44
+-rw-r--r--.  1 condor condor 7675 Jul 13 18:26 .machine.ad
+-rw-r--r--.  1 condor condor 7003 Jul 13 18:26 .job.ad
+drwxr-xr-x. 17 condor condor 4096 Jul 13 18:26 ..
+-rw-------.  1 yian   zh     3596 Jul 13 18:26 yian.cc
+-rwx------.  1 yian   zh       48 Jul 13 18:26 .chirp.config
+drwx------.  3 yian   zh     4096 Jul 13 18:26 var
+drwx------.  2 yian   zh     4096 Jul 13 18:26 srv
+drwx------.  5 yian   zh     4096 Jul 13 18:26 .
+drwx------.  3 yian   zh     4096 Jul 13 18:26 tmp
+/pool/condor/dir_42702
+total 44
+-rw-r--r--.  1 condor condor 7675 Jul 13 18:26 .machine.ad
+-rw-r--r--.  1 condor condor 7003 Jul 13 18:26 .job.ad
+drwxr-xr-x. 17 condor condor 4096 Jul 13 18:26 ..
+-rw-------.  1 yian   zh     3596 Jul 13 18:26 yian.cc
+-rwx------.  1 yian   zh       48 Jul 13 18:26 .chirp.config
+drwx------.  3 yian   zh     4096 Jul 13 18:26 var
+drwx------.  2 yian   zh     4096 Jul 13 18:26 srv
+drwx------.  5 yian   zh     4096 Jul 13 18:26 .
+drwx------.  3 yian   zh     4096 Jul 13 18:26 tmp
+[--> Output dir: .//myCampaign_gap/GJets_SM_INT_all/TEST/]
+0: /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts/vjj_VJJSkimmerJME.sh
+1: -c
+2: myCampaign_gap/GJets_SM_INT_all
+3: -d
+4: /GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM
+5: --nfilesperchunk
+6: 1
+7: --chunkindex
+8: 8
+9: -o
+10: .//myCampaign_gap/GJets_SM_INT
+[43m
+[43m     
+
+[43m                                           [0m
+[33m
+--- Running VJJSkimmerJME (via vjj_VJJSkimmerJME_postproc.py) ---[0m
+
+[43m                                           [0m
+
+dataset name is /GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM
+year, isData and isSignal are set from the dataset name to 2018, False and False
+False
+isjson
+['GJets_SM_INT', 'GJets_SM_5f']
+('sample', [None, 'weights'])
+('sample', [None, 'weights'])
+('sample', [None, 'weights'])
+('sample', [None, 'weights'])
+('sample', [None, 'weights'])
+('/GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM', '/GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM', 'GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8_2018_v1')
+('/GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM', 1, 8, 9, 9)
+[94m
+== Processing following files:[0m
+/eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/gamma/GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/crab_GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8_2018_v1/240710_103708/0000/out_9.root
+[94m
+== JEC variations: [0m
+['AbsoluteMPFBiasUp', 'AbsoluteMPFBiasDown', 'JERUp', 'JERDown', 'AbsoluteScaleUp', 'AbsoluteScaleDown', 'JERUp', 'JERDown', 'FragmentationUp', 'FragmentationDown', 'JERUp', 'JERDown', 'PileUpDataMCUp', 'PileUpDataMCDown', 'JERUp', 'JERDown', 'PileUpPtBBUp', 'PileUpPtBBDown', 'JERUp', 'JERDown', 'PileUpPtHFUp', 'PileUpPtHFDown', 'JERUp', 'JERDown', 'PileUpPtRefUp', 'PileUpPtRefDown', 'JERUp', 'JERDown', 'RelativeFSRUp', 'RelativeFSRDown', 'JERUp', 'JERDown', 'RelativeJERHFUp', 'RelativeJERHFDown', 'JERUp', 'JERDown', 'RelativePtBBUp', 'RelativePtBBDown', 'JERUp', 'JERDown', 'RelativePtHFUp', 'RelativePtHFDown', 'JERUp', 'JERDown', 'RelativeBalUp', 'RelativeBalDown', 'JERUp', 'JERDown', 'SinglePionECALUp', 'SinglePionECALDown', 'JERUp', 'JERDown', 'SinglePionHCALUp', 'SinglePionHCALDown', 'JERUp', 'JERDown', 'FlavorQCDUp', 'FlavorQCDDown', 'JERUp', 'JERDown', 'TimePtEtaUp', 'TimePtEtaDown', 'JERUp', 'JERDown', 'AbsoluteStatUp', 'AbsoluteStatDown', 'JERUp', 'JERDown', 'RelativeJEREC1Up', 'RelativeJEREC1Down', 'JERUp', 'JERDown', 'RelativeJEREC2Up', 'RelativeJEREC2Down', 'JERUp', 'JERDown', 'RelativePtEC1Up', 'RelativePtEC1Down', 'JERUp', 'JERDown', 'RelativePtEC2Up', 'RelativePtEC2Down', 'JERUp', 'JERDown', 'RelativeSampleUp', 'RelativeSampleDown', 'JERUp', 'JERDown', 'RelativeStatECUp', 'RelativeStatECDown', 'JERUp', 'JERDown', 'RelativeStatFSRUp', 'RelativeStatFSRDown', 'JERUp', 'JERDown', 'RelativeStatHFUp', 'RelativeStatHFDown', 'JERUp', 'JERDown']
+
+('finale state:', 22)
+JEC : Autumn18_V19_MC	 JER : Autumn18_V7b_MC
+MET branch : MET
+[94m
+== Creating output file:[0m
+/pool/condor/dir_42702/.//myCampaign_gap/GJets_SM_INT_all/TEST//2018/GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8_2018_v1//Skimmed_1_8.root
+
+('finale state:', 22)
+/pool/condor/dir_42702
+Will write selected trees to /pool/condor/dir_42702
+Loading jet energy scale (JES) uncertainties from file '/pool/condor/dir_42702/tmp/tmpeBJoqz/Autumn18_V19_MC_UncertaintySources_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/pool/condor/dir_42702/tmp/tmpkaeszC/Autumn18_V7b_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/pool/condor/dir_42702/tmp/tmpkaeszC/Autumn18_V7b_MC_SF_AK4PFchs.txt'
+Pre-select 11361 entries out of 42695 (26.61%)
+nanoAODv5 or higher: True
+Processed    10000/   11361 entries, 88.02% (elapsed time  4069.3s, curr speed    0.002 kHz, avg speed    0.002 kHz), accepted     8241/   10001 events (82.40%)
+[33m... Writing output Tree: Events_AbsoluteMPFBiasUp ...[0m (9309 entries)
+[33m... Writing output Tree: Events_AbsoluteMPFBiasDown ...[0m (9284 entries)
+[33m... Writing output Tree: Events_JERU  ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_AbsoluteScaleUp ...[0m (9303 entries)
+[33m... Writing output Tree: Events_AbsoluteScaleDown ...[0m (9293 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_FragmentationUp ...[0m (9302 entries)
+[33m... Writing output Tree: Events_FragmentationDown ...[0m (9295 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_PileUpDataMCUp ...[0m (9309 entries)
+[33m... Writing output Tree: Events_PileUpDataMCDown ...[0m (9287 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_PileUpPtBBUp ...[0m (9293 entries)
+[33m... Writing output Tree: Events_PileUpPtBBDown ...[0m (9300 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_PileUpPtHFUp ...[0m (9302 entries)
+[33m... Writing output Tree: Events_PileUpPtHFDown ...[0m (9298 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_PileUpPtRefUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_PileUpPtRefDown ...[0m (9300 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeFSRUp ...[0m (9293 entries)
+[33m... Writing output Tree: Events_RelativeFSRDown ...[0m (9307 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeJERHFUp ...[0m (9304 entries)
+[33m... Writing output Tree: Events_RelativeJERHFDown ...[0m (9299 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativePtBBUp ...[0m (9299 entries)
+[33m... Writing output Tree: Events_RelativePtBBDown ...[0m (9298 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativePtHFUp ...[0m (9299 entries)
+[33m... Writing output Tree: Events_RelativePtHFDown ...[0m (9301 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeBalUp ...[0m (9262 entries)
+[33m... Writing output Tree: Events_RelativeBalDown ...[0m (9332 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_SinglePionECALUp ...[0m (9295 entries)
+[33m... Writing output Tree: Events_SinglePionECALDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_SinglePionHCALUp ...[0m (9295 entries)
+[33m... Writing output Tree: Events_SinglePionHCALDown ...[0m (9302 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_FlavorQCDUp ...[0m (9340 entries)
+[33m... Writing output Tree: Events_FlavorQCDDown ...[0m (9262 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m.Adding file/pool/condor/dir_42702/out_9_Skim.root
+MergingTotalNumbers
+MergingEvents_AbsoluteMPFBiasUp
+MergingEvents_AbsoluteMPFBiasDown
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERUp
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_JERDown
+MergingEvents_AbsoluteScaleUp
+MergingEvents_AbsoluteScaleDown
+MergingEvents_FragmentationUp
+MergingEvents_FragmentationDown
+MergingEvents_PileUpDataMCUp
+MergingEvents_PileUpDataMCDown
+MergingEvents_PileUpPtBBUp
+MergingEvents_PileUpPtBBDown
+MergingEvents_PileUpPtHFUp
+MergingEvents_PileUpPtHFDown
+MergingEvents_PileUpPtRefUp
+MergingEvents_PileUpPtRefDown
+MergingEvents_RelativeFSRUp
+MergingEvents_RelativeFSRDown
+MergingEvents_RelativeJERHFUp
+MergingEvents_RelativeJERHFDown
+MergingEvents_RelativePtBBUp
+MergingEvents_RelativePtBBDown
+MergingEvents_RelativePtHFUp
+MergingEvents_RelativePtHFDown
+MergingEvents_RelativeBalUp
+MergingEvents_RelativeBalDown
+MergingEvents_SinglePionECALUp
+MergingEvents_SinglePionECALDown
+MergingEvents_SinglePionHCALUp
+MergingEvents_SinglePionHCALDown
+MergingEvents_FlavorQCDUp
+MergingEvents_FlavorQCDDown
+MergingEvents_TimePtEtaUp
+MergingEvents_TimePtEtaDown
+MergingEvents_AbsoluteStatUp
+MergingEvents_AbsoluteStatDown
+MergingEvents_RelativeJEREC1Up
+MergingEvents_RelativeJEREC1Down
+MergingEvents_RelativeJEREC2Up
+MergingEvents_RelativeJEREC2Down
+MergingEvents_RelativePtEC1Up
+MergingEvents_RelativePtEC1Down
+MergingEvents_RelativePtEC2Up
+MergingEvents_RelativePtEC2Down
+MergingEvents_RelativeSampleUp
+MergingEvents_RelativeSampleDown
+MergingEvents_RelativeStatECUp
+MergingEvents_RelativeStatECDown
+MergingEvents_RelativeStatFSRUp
+MergingEvents_RelativeStatFSRDown
+MergingEvents_RelativeStatHFUp
+MergingEvents_RelativeStatHFDown
+MergingEvents
+MergingRuns
+MergingParameterSets
+MergingLuminosityBlocks
+MergingMetaData
+MergingnEventsGenWeighted
+MergingwgtSum
+Mergingcutflow
+MergingnEvents
+Merginguntagged
+Mergingnwgts
+.. Writing output Tree: Events_TimePtEtaUp ...[0m (9278 entries)
+[33m... Writing output Tree: Events_TimePtEtaDown ...[0m (9314 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_AbsoluteStatUp ...[0m (9308 entries)
+[33m... Writing output Tree: Events_AbsoluteStatDown ...[0m (9285 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeJEREC1Up ...[0m (9301 entries)
+[33m... Writing output Tree: Events_RelativeJEREC1Down ...[0m (9291 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeJEREC2Up ...[0m (9305 entries)
+[33m... Writing output Tree: Events_RelativeJEREC2Down ...[0m (9297 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativePtEC1Up ...[0m (9296 entries)
+[33m... Writing output Tree: Events_RelativePtEC1Down ...[0m (9298 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativePtEC2Up ...[0m (9301 entries)
+[33m... Writing output Tree: Events_RelativePtEC2Down ...[0m (9299 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeSampleUp ...[0m (9229 entries)
+[33m... Writing output Tree: Events_RelativeSampleDown ...[0m (9364 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeStatECUp ...[0m (9301 entries)
+[33m... Writing output Tree: Events_RelativeStatECDown ...[0m (9293 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeStatFSRUp ...[0m (9302 entries)
+[33m... Writing output Tree: Events_RelativeStatFSRDown ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+[33m... Writing output Tree: Events_RelativeStatHFUp ...[0m (9304 entries)
+[33m... Writing output Tree: Events_RelativeStatHFDown ...[0m (9298 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (9296 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (9303 entries)
+Processed 11361 preselected entries from /eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/gamma/GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/crab_GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8_2018_v1/240710_103708/0000/out_9.root (42695 entries). Finally selected 9356 entries
+Done /pool/condor/dir_42702/out_9_Skim.root
+Total time 5635.8 sec. to process 42695 events. Rate = 7.6 Hz.
+[01m[33m
+... DONE ![0m
+total 2519664
+-rw-r--r--.  1 condor condor       7675 Jul 13 18:26 .machine.ad
+-rw-r--r--.  1 condor condor       7003 Jul 13 18:26 .job.ad
+-rwx------.  1 yian   zh             48 Jul 13 18:26 .chirp.config
+drwx------.  3 yian   zh           4096 Jul 13 18:26 var
+drwx------.  2 yian   zh           4096 Jul 13 18:26 srv
+drwxr-xr-x.  3 yian   zh           4096 Jul 13 18:26 myCampaign_gap
+-rw-------.  1 yian   zh           6776 Jul 13 18:26 yian.cc
+drwxr-xr-x. 17 condor condor       4096 Jul 13 18:36 ..
+-rw-r--r--.  1 yian   zh           7457 Jul 13 19:54 .update.ad
+drwx------.  6 yian   zh           4096 Jul 13 19:54 .
+-rw-r--r--.  1 yian   zh     2580067776 Jul 13 20:00 out_9_Skim.root
+drwx------.  3 yian   zh           4096 Jul 13 20:00 tmp
+total 2519664
+-rw-r--r--.  1 condor condor       7675 Jul 13 18:26 .machine.ad
+-rw-r--r--.  1 condor condor       7003 Jul 13 18:26 .job.ad
+-rwx------.  1 yian   zh             48 Jul 13 18:26 .chirp.config
+drwx------.  3 yian   zh           4096 Jul 13 18:26 var
+drwx------.  2 yian   zh           4096 Jul 13 18:26 srv
+drwxr-xr-x.  3 yian   zh           4096 Jul 13 18:26 myCampaign_gap
+-rw-------.  1 yian   zh           6776 Jul 13 18:26 yian.cc
+drwxr-xr-x. 17 condor condor       4096 Jul 13 18:36 ..
+-rw-r--r--.  1 yian   zh           7457 Jul 13 19:54 .update.ad
+-rw-r--r--.  1 yian   zh     2580067776 Jul 13 20:00 out.root
+drwx------.  3 yian   zh           4096 Jul 13 20:00 tmp
+drwx------.  6 yian   zh           4096 Jul 13 20:00 .
+directory .//myCampaign_gap/GJets_SM_INT_all/TEST/
+total 12
+drwxr-xr-x. 3 yian zh 4096 Jul 13 18:26 2018
+drwxr-xr-x. 3 yian zh 4096 Jul 13 18:26 ..
+drwxr-xr-x. 3 yian zh 4096 Jul 13 18:26 .
+yian zh 4096 Jul 13 16:55 .
