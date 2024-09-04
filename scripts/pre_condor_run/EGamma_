@@ -1,0 +1,124 @@
+/pool/condor/dir_5877
+/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts
+3.10.0-1160.105.1.el7.x86_64
+slc7_amd64_gcc700
+Linux b7s01p1580.cern.ch 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+directory: /pool/condor/dir_5877
+total 44
+-rw-r--r--.  1 condor condor 5811 Jul 12 22:45 .job.ad
+-rw-r--r--.  1 condor condor 7290 Jul 12 22:45 .machine.ad
+-rwx------.  1 yian   zh       48 Jul 12 22:45 .chirp.config
+-rw-------.  1 yian   zh     3596 Jul 12 22:45 yian.cc
+drwx------.  3 yian   zh     4096 Jul 12 22:45 var
+drwx------.  2 yian   zh     4096 Jul 12 22:45 srv
+drwx------.  5 yian   zh     4096 Jul 12 22:45 .
+drwxr-xr-x. 31 condor condor 4096 Jul 12 22:45 ..
+drwx------.  3 yian   zh     4096 Jul 12 22:45 tmp
+/pool/condor/dir_5877
+total 44
+-rw-r--r--.  1 condor condor 5811 Jul 12 22:45 .job.ad
+-rw-r--r--.  1 condor condor 7290 Jul 12 22:45 .machine.ad
+-rwx------.  1 yian   zh       48 Jul 12 22:45 .chirp.config
+-rw-------.  1 yian   zh     3596 Jul 12 22:45 yian.cc
+drwx------.  3 yian   zh     4096 Jul 12 22:45 var
+drwx------.  2 yian   zh     4096 Jul 12 22:45 srv
+drwx------.  5 yian   zh     4096 Jul 12 22:45 .
+drwxr-xr-x. 31 condor condor 4096 Jul 12 22:45 ..
+drwx------.  3 yian   zh     4096 Jul 12 22:45 tmp
+[--> Output dir: .//myCampaign_gap/PhotonData_all/TEST/]
+0: /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts/vjj_VJJSkimmerJME.sh
+1: -c
+2: myCampaign_gap/PhotonData_all
+3: -d
+4: /EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD
+5: --nfilesperchunk
+6: 1
+7: --chunkindex
+8: 73
+9: -o
+10: .//myCampaign_gap/PhotonData_all/TEST/
+11: -S
+AddAdding file/pool/condor/dir_30326/out_64_Skim.root
+MergingTotalNumbers
+MergingEvents
+MergingRuns
+MergingParameterSets
+MergingLuminosityBlocks
+MergingMetaData
+MergingnEventsGenWeighted
+Merginguntagged
+MergingnEvents
+Mergingnwgts
+Mergingcutflow
+
+[43m                                           [0m
+[33m
+--- Running VJJSkimmerJME (via vjj_VJJSkimmerJME_postproc.py) ---[0m
+
+[43m                                           [0m
+
+dataset name is /EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD
+year, isData and isSignal are set from the dataset name to 2018, True and False
+True
+[94m
+== Applying lumi mask: [0m
+/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
+
+isjson
+['PhotonData', 'DoubleEGData']
+('sample', ['era : H', 'weights', 'era : C', 'era : B', 'era : G', 'era : F', 'era : E', 'era : D'])
+('sample', ['weights', 'era : C', 'era : B', 'era : F', 'era : E', 'era : D'])
+('sample', ['era : C', 'era : B', 'era : A', 'weights', 'era : D'])
+('/EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD', '/EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD', 'EGamma_2018_B_v1')
+('/EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD', 1, 72, 74, 74)
+[94m
+== Processing following files:[0m
+/eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/gamma/EGamma/crab_EGamma_2018_B_v1/240710_104442/0000/out_64.root
+[94m
+== JEC variations: [0m
+['AbsoluteMPFBiasUp', 'AbsoluteMPFBiasDown', 'JERUp', 'JERDown', 'AbsoluteScaleUp', 'AbsoluteScaleDown', 'JERUp', 'JERDown', 'FragmentationUp', 'FragmentationDown', 'JERUp', 'JERDown', 'PileUpDataMCUp', 'PileUpDataMCDown', 'JERUp', 'JERDown', 'PileUpPtBBUp', 'PileUpPtBBDown', 'JERUp', 'JERDown', 'PileUpPtHFUp', 'PileUpPtHFDown', 'JERUp', 'JERDown', 'PileUpPtRefUp', 'PileUpPtRefDown', 'JERUp', 'JERDown', 'RelativeFSRUp', 'RelativeFSRDown', 'JERUp', 'JERDown', 'RelativeJERHFUp', 'RelativeJERHFDown', 'JERUp', 'JERDown', 'RelativePtBBUp', 'RelativePtBBDown', 'JERUp', 'JERDown', 'RelativePtHFUp', 'RelativePtHFDown', 'JERUp', 'JERDown', 'RelativeBalUp', 'RelativeBalDown', 'JERUp', 'JERDown', 'SinglePionECALUp', 'SinglePionECALDown', 'JERUp', 'JERDown', 'SinglePionHCALUp', 'SinglePionHCALDown', 'JERUp', 'JERDown', 'FlavorQCDUp', 'FlavorQCDDown', 'JERUp', 'JERDown', 'TimePtEtaUp', 'TimePtEtaDown', 'JERUp', 'JERDown', 'AbsoluteStatUp', 'AbsoluteStatDown', 'JERUp', 'JERDown', 'RelativeJEREC1Up', 'RelativeJEREC1Down', 'JERUp', 'JERDown', 'RelativeJEREC2Up', 'RelativeJEREC2Down', 'JERUp', 'JERDown', 'RelativePtEC1Up', 'RelativePtEC1Down', 'JERUp', 'JERDown', 'RelativePtEC2Up', 'RelativePtEC2Down', 'JERUp', 'JERDown', 'RelativeSampleUp', 'RelativeSampleDown', 'JERUp', 'JERDown', 'RelativeStatECUp', 'RelativeStatECDown', 'JERUp', 'JERDown', 'RelativeStatFSRUp', 'RelativeStatFSRDown', 'JERUp', 'JERDown', 'RelativeStatHFUp', 'RelativeStatHFDown', 'JERUp', 'JERDown']
+
+('finale state:', 22)
+[94m
+== Creating output file:[0m
+/pool/condor/dir_30326/.//myCampaign_gap/PhotonData_all/TEST//2018/EGamma_2018_B_v1//Skimmed_1_72.root
+
+('finale state:', 22)
+/pool/condor/dir_30326
+Will write selected trees to /pool/condor/dir_30326
+Pre-select 2011 entries out of 3837 (52.41%)
+Processed 2011 preselected entries from /eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/gamma/EGamma/crab_EGamma_2018_B_v1/240710_104442/0000/out_64.root (3837 entries). Finally selected 1425 entries
+Done /pool/condor/dir_30326/out_64_Skim.root
+Total time 14.6 sec. to process 3837 events. Rate = 262.4 Hz.
+[01m[33m
+... DONE ![0m
+total 5476
+-rw-r--r--.  1 condor condor    5807 Jul 12 22:45 .job.ad
+-rw-r--r--.  1 condor condor    7162 Jul 12 22:45 .machine.ad
+-rwx------.  1 yian   zh          48 Jul 12 22:45 .chirp.config
+drwx------.  3 yian   zh        4096 Jul 12 22:45 var
+drwx------.  2 yian   zh        4096 Jul 12 22:45 srv
+drwx------.  3 yian   zh        4096 Jul 12 22:45 tmp
+drwxr-xr-x. 26 condor condor    4096 Jul 12 22:45 ..
+drwxr-xr-x.  3 yian   zh        4096 Jul 12 22:45 myCampaign_gap
+-rw-------.  1 yian   zh        6776 Jul 12 22:45 yian.cc
+drwx------.  6 yian   zh        4096 Jul 12 22:45 .
+-rw-r--r--.  1 yian   zh     5553206 Jul 12 22:45 out_64_Skim.root
+total 5476
+-rw-r--r--.  1 condor condor    5807 Jul 12 22:45 .job.ad
+-rw-r--r--.  1 condor condor    7162 Jul 12 22:45 .machine.ad
+-rwx------.  1 yian   zh          48 Jul 12 22:45 .chirp.config
+drwx------.  3 yian   zh        4096 Jul 12 22:45 var
+drwx------.  2 yian   zh        4096 Jul 12 22:45 srv
+drwx------.  3 yian   zh        4096 Jul 12 22:45 tmp
+drwxr-xr-x. 26 condor condor    4096 Jul 12 22:45 ..
+drwxr-xr-x.  3 yian   zh        4096 Jul 12 22:45 myCampaign_gap
+-rw-------.  1 yian   zh        6776 Jul 12 22:45 yian.cc
+-rw-r--r--.  1 yian   zh     5553206 Jul 12 22:45 out.root
+drwx------.  6 yian   zh        4096 Jul 12 22:45 .
+directory .//myCampaign_gap/PhotonData_all/TEST/
+total 12
+drwxr-xr-x. 3 yian zh 4096 Jul 12 22:45 2018
+drwxr-xr-x. 3 yian zh 4096 Jul 12 22:45 ..
+drwxr-xr-x. 3 yian zh 4096 Jul 12 22:45 .
+

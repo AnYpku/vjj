@@ -1,0 +1,146 @@
+/srv
+/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts
+5.14.0-362.24.1.el9_3.x86_64
+slc7_amd64_gcc700
+Linux b9p03p5594.cern.ch 5.14.0-362.24.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Feb 15 07:18:13 EST 2024 x86_64 x86_64 x86_64 GNU/Linux
+CMSSW  /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29
+Current directory /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src
+/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts
+directory: /srv
+total 36
+-rw-r--r--. 1 65534 65534 8233 Aug  5 14:38 .machine.ad
+-rw-r--r--. 1 65534 65534 6874 Aug  5 14:38 .job.ad
+-rw-------. 1 yian  zh    3588 Aug  5 14:38 yian.cc
+-rwx------. 1 yian  zh      48 Aug  5 14:38 .chirp.config
+drwx------. 3 yian  zh      17 Aug  5 14:38 var
+drwx------. 2 yian  zh       6 Aug  5 14:38 tmp
+drwx------. 2 yian  zh       6 Aug  5 14:38 srv
+srwxr-xr-x. 1 yian  zh       0 Aug  5 14:38 .docker_sock
+drwxrwxrwt. 2 yian  zh       6 Aug  5 14:38 var_tmp
+drwxr-x---. 6 yian  zh      51 Aug  5 14:38 scratch
+drwxr-xr-x. 1 yian  zh      80 Aug  5 14:38 ..
+-rw-r--r--. 1 yian  zh    7862 Aug  5 14:38 .update.ad
+drwx------. 7 yian  zh     177 Aug  5 14:38 .
+/srv
+total 36
+-rw-r--r--. 1 65534 65534 8233 Aug  5 14:38 .machine.ad
+-rw-r--r--. 1 65534 65534 6874 Aug  5 14:38 .job.ad
+-rw-------. 1 yian  zh    3588 Aug  5 14:38 yian.cc
+-rwx------. 1 yian  zh      48 Aug  5 14:38 .chirp.config
+drwx------. 3 yian  zh      17 Aug  5 14:38 var
+drwx------. 2 yian  zh       6 Aug  5 14:38 tmp
+drwx------. 2 yian  zh       6 Aug  5 14:38 srv
+srwxr-xr-x. 1 yian  zh       0 Aug  5 14:38 .docker_sock
+drwxrwxrwt. 2 yian  zh       6 Aug  5 14:38 var_tmp
+drwxr-x---. 6 yian  zh      51 Aug  5 14:38 scratch
+drwxr-xr-x. 1 yian  zh      80 Aug  5 14:38 ..
+-rw-r--r--. 1 yian  zh    7862 Aug  5 14:38 .update.ad
+drwx------. 7 yian  zh     177 Aug  5 14:38 .
+[--> Output dir: .//myCampaign_fake_gap/PhotonData_all/TEST/]
+0: /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts/vjj_VJJSkimmerJME.sh
+1: -c
+2: myCampaign_fake_gap/PhotonData_all
+3: -d
+4: /EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOAdding file/srv/out_25_Skim.root
+MergingTotalNumbers
+MergingEvents
+MergingRuns
+MergingParameterSets
+MergingLuAdding file/srv/out_23_Skim.root
+MergingTotalNumbers
+MergingEvents
+MergingRuns
+MergingParameterSets
+MergingLuminosityBlocks
+MergingMetaData
+MergingnEventsGenWeighted
+Merginguntagged
+MergingnEvents
+Mergingnwgts
+Mergingcutflow
+
+[43m                                           [0m
+[33m
+--- Running VJJSkimmerJME (via vjj_VJJSkimmerJME_postproc.py) ---[0m
+
+[43m                                           [0m
+
+dataset name is /EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD
+year, isData and isSignal are set from the dataset name to 2018, True and False
+True
+[94m
+== Applying lumi mask: [0m
+/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
+
+isjson
+['PhotonData', 'DoubleEGData']
+('sample', ['era : H', 'weights', 'era : C', 'era : B', 'era : G', 'era : F', 'era : E', 'era : D'])
+('sample', ['weights', 'era : C', 'era : B', 'era : F', 'era : E', 'era : D'])
+('sample', ['era : C', 'era : B', 'era : A', 'weights', 'era : D'])
+('/EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD', '/EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD', 'EGamma_2018_B_v1')
+('/EGamma/Run2018B-UL2018_MiniAODv2_NanoAODv9-v1/NANOAOD', 1, 31, 74, 74)
+[94m
+== Processing following files:[0m
+/eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/fake/EGamma/crab_EGamma_2018_B_v1/240710_124535/0000/out_23.root
+[94m
+== JEC variations: [0m
+['AbsoluteMPFBiasUp', 'AbsoluteMPFBiasDown', 'AbsoluteScaleUp', 'AbsoluteScaleDown', 'FragmentationUp', 'FragmentationDown', 'PileUpDataMCUp', 'PileUpDataMCDown', 'PileUpPtBBUp', 'PileUpPtBBDown', 'PileUpPtHFUp', 'PileUpPtHFDown', 'PileUpPtRefUp', 'PileUpPtRefDown', 'RelativeFSRUp', 'RelativeFSRDown', 'RelativeJERHFUp', 'RelativeJERHFDown', 'RelativePtBBUp', 'RelativePtBBDown', 'RelativePtHFUp', 'RelativePtHFDown', 'RelativeBalUp', 'RelativeBalDown', 'SinglePionECALUp', 'SinglePionECALDown', 'SinglePionHCALUp', 'SinglePionHCALDown', 'FlavorQCDUp', 'FlavorQCDDown', 'TimePtEtaUp', 'TimePtEtaDown', 'AbsoluteStatUp', 'AbsoluteStatDown', 'RelativeJEREC1Up', 'RelativeJEREC1Down', 'RelativeJEREC2Up', 'RelativeJEREC2Down', 'RelativePtEC1Up', 'RelativePtEC1Down', 'RelativePtEC2Up', 'RelativePtEC2Down', 'RelativeSampleUp', 'RelativeSampleDown', 'RelativeStatECUp', 'RelativeStatECDown', 'RelativeStatFSRUp', 'RelativeStatFSRDown', 'RelativeStatHFUp', 'RelativeStatHFDown', 'JERUp', 'JERDown']
+
+('finale state:', -22)
+[94m
+== Creating output file:[0m
+/srv/.//myCampaign_fake_gap/PhotonData_all/TEST//2018/EGamma_2018_B_v1//Skimmed_1_31.root
+
+('finale state:', -22)
+/srv
+Will write selected trees to /srv
+Pre-select 6607 entries out of 15678 (42.14%)
+Processed 6607 preselected entries from /eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/fake/EGamma/crab_EGamma_2018_B_v1/240710_124535/0000/out_23.root (15678 entries). Finally selected 4579 entries
+Done /srv/out_23_Skim.root
+Total time 29.0 sec. to process 15678 events. Rate = 541.0 Hz.
+[01m[33m
+... DONE ![0m
+total 6232
+-rw-r--r--. 1 65534 65534    7949 Aug  5 14:37 .machine.ad
+-rw-r--r--. 1 65534 65534    6116 Aug  5 14:37 .job.ad
+-rwx------. 1 yian  zh         48 Aug  5 14:37 .chirp.config
+-rw-------. 1 yian  zh       3588 Aug  5 14:37 yian.cc
+drwx------. 3 yian  zh         17 Aug  5 14:37 var
+drwx------. 2 yian  zh          6 Aug  5 14:37 tmp
+drwx------. 2 yian  zh          6 Aug  5 14:37 srv
+srwxr-xr-x. 1 yian  zh          0 Aug  5 14:37 .docker_sock
+drwxrwxrwt. 2 yian  zh          6 Aug  5 14:37 var_tmp
+drwxr-x---. 6 yian  zh         51 Aug  5 14:37 scratch
+drwxr-xr-x. 1 yian  zh         80 Aug  5 14:37 ..
+drwxr-xr-x. 3 yian  zh         36 Aug  5 14:38 myCampaign_fake_gap
+-rw-r--r--. 1 yian  zh    6343956 Aug  5 14:38 out_23_Skim.root
+-rw-r--r--. 1 yian  zh       8048 Aug  5 14:39 .update.ad
+drwx------. 8 yian  zh       4096 Aug  5 14:39 .
+total 6232
+-rw-r--r--. 1 65534 65534    7949 Aug  5 14:37 .machine.ad
+-rw-r--r--. 1 65534 65534    6116 Aug  5 14:37 .job.ad
+-rwx------. 1 yian  zh         48 Aug  5 14:37 .chirp.config
+-rw-------. 1 yian  zh       3588 Aug  5 14:37 yian.cc
+drwx------. 3 yian  zh         17 Aug  5 14:37 var
+drwx------. 2 yian  zh          6 Aug  5 14:37 tmp
+drwx------. 2 yian  zh          6 Aug  5 14:37 srv
+srwxr-xr-x. 1 yian  zh          0 Aug  5 14:37 .docker_sock
+drwxrwxrwt. 2 yian  zh          6 Aug  5 14:37 var_tmp
+drwxr-x---. 6 yian  zh         51 Aug  5 14:37 scratch
+drwxr-xr-x. 1 yian  zh         80 Aug  5 14:37 ..
+drwxr-xr-x. 3 yian  zh         36 Aug  5 14:38 myCampaign_fake_gap
+-rw-r--r--. 1 yian  zh    6343956 Aug  5 14:38 out.root
+-rw-r--r--. 1 yian  zh       8048 Aug  5 14:39 .update.ad
+drwx------. 8 yian  zh       4096 Aug  5 14:39 .
+directory .//myCampaign_fake_gap/PhotonData_all/TEST/
+total 0
+drwxr-xr-x. 3 yian zh 38 Aug  5 14:38 2018
+drwxr-xr-x. 3 yian zh 26 Aug  5 14:38 ..
+drwxr-xr-x. 3 yian zh 26 Aug  5 14:38 .
+
+r-x. 3 yian zh 26 Aug  5 14:38 .
+_fake_gap/PhotonData_all/TEST/
+total 0
+drwxr-xr-x. 3 yian zh 38 Aug  5 14:38 2018
+drwxr-xr-x. 3 yian zh 26 Aug  5 14:38 ..
+drwxr-xr-x. 3 yian zh 26 Aug  5 14:38 .

@@ -1,0 +1,30 @@
+executable          = /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts/vjj_VJJSkimmerJME.sh
+arguments           = -c $(CAMPAIGN) -d $(DATASET) --nfilesperchunk 1 --chunkindex $(chunkid) -o .//myCampaign_gap/WGJJ_all/TEST/ -S 22
+output              = condor_myCampaign_gap_WGJJ_all2018_12Jul2024_15h06m51/$(ClusterId).$(ProcId).out
+error               = condor_myCampaign_gap_WGJJ_all2018_12Jul2024_15h06m51/$(ClusterId).$(ProcId).err
+log                 = condor_myCampaign_gap_WGJJ_all2018_12Jul2024_15h06m51/$(ClusterId).log
++JobFlavour         = "tomorrow"
+MY.SingularityImage = "/cvmfs/unpacked.cern.ch/gitlab-registry.cern.ch/cms-cat/cmssw-lxplus/cmssw-el7-lxplus:latest/"
+transfer_executable = False
+stream_output       = True
+stream_error        = True
+max_transfer_output_mb= 4000
+should_transfer_files= YES
+when_to_transfer_output= ON_EXIT
+transfer_output_files= out.root
+transfer_output_remaps= "out.root=root://eosuser.cern.ch//eos/user/y/yian/AJJ_analysis/$(OUTPUT)$(CAMPAIGN)_2018_$(ClusterId)/Skim_$(ClusterId)_$(ProcId).root"
+request_memory      = 30GB
+queue OUTPUT CAMPAIGN DATASET,chunkid from (
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 0
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 1
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 2
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 3
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 4
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 5
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 6
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 7
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 8
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 9
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 10
+	WGammaToJJGamma_TuneCP5_ myCampaign_gap/WGJJ_all /WGammaToJJGamma_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM 11
+)

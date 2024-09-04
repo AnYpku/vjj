@@ -1,0 +1,273 @@
+/srv
+/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts
+5.14.0-427.20.1.el9_4.x86_64
+slc7_amd64_gcc700
+Linux b9p13p8585.cern.ch 5.14.0-427.20.1.el9_4.x86_64 #1 SMP PREEMPT_DYNAMIC Thu May 23 16:37:13 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux
+CMSSW  /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29
+Current directory /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src
+/afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts
+directory: /srv
+total 32
+-rw-r--r--. 1 65534 65534 8139 Aug  5 12:41 .machine.ad
+-rw-r--r--. 1 65534 65534 6964 Aug  5 12:41 .job.ad
+-rw-------. 1 yian  zh    3588 Aug  5 12:41 yian.cc
+-rwx------. 1 yian  zh      48 Aug  5 12:41 .chirp.config
+drwx------. 3 yian  zh      17 Aug  5 12:41 var
+drwx------. 2 yian  zh       6 Aug  5 12:41 tmp
+drwx------. 2 yian  zh       6 Aug  5 12:41 srv
+srwxr-xr-x. 1 yian  zh       0 Aug  5 12:41 .docker_sock
+drwxrwxrwt. 2 yian  zh       6 Aug  5 12:41 var_tmp
+drwxr-x---. 6 yian  zh      51 Aug  5 12:41 scratch
+-rw-r--r--. 1 yian  zh    7765 Aug  5 12:41 .update.ad
+drwx------. 7 yian  zh     177 Aug  5 12:41 .
+drwxr-xr-x. 1 yian  zh      80 Aug  5 12:41 ..
+/srv
+total 32
+-rw-r--r--. 1 65534 65534 8139 Aug  5 12:41 .machine.ad
+-rw-r--r--. 1 65534 65534 6964 Aug  5 12:41 .job.ad
+-rw-------. 1 yian  zh    3588 Aug  5 12:41 yian.cc
+-rwx------. 1 yian  zh      48 Aug  5 12:41 .chirp.config
+drwx------. 3 yian  zh      17 Aug  5 12:41 var
+drwx------. 2 yian  zh       6 Aug  5 12:41 tmp
+drwx------. 2 yian  zh       6 Aug  5 12:41 srv
+srwxr-xr-x. 1 yian  zh       0 Aug  5 12:41 .docker_sock
+drwxrwxrwt. 2 yian  zh       6 Aug  5 12:41 var_tmp
+drwxr-x---. 6 yian  zh      51 Aug  5 12:41 scratch
+-rw-r--r--. 1 yian  zh    7765 Aug  5 12:41 .update.ad
+drwx------. 7 yian  zh     177 Aug  5 12:41 .
+drwxr-xr-x. 1 yian  zh      80 Aug  5 12:41 ..
+[--> Output dir: .//myCampaign_gap/GJetsNLO_all/TEST/]
+0: /afs/cern.ch/work/y/yian/work/ewk_ajj/CMSSW_10_6_29/src/UserCode/VJJSkimmer/scripts/vjj_VJJSkimmerJME.sh
+1: -c
+2: myCampaign_gap/GJetsNLO_all
+3: -d
+4: /G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODAPVv9-106X_mcRun2_asymptotic_preVFP_v11-v1/NANOAODSIM
+5: --nfilesperchunk
+6: 1
+7: --chunkindex
+8: 0
+9: -o
+10: .//myCampaign_gap/GJetsNLO_all/T
+[43m                                           [0m
+[33m
+--- Running VJJSkimmerJME (via vjj_VJJSkimmerJME_postproc.py) ---[0m
+
+[43m                                           [0m
+
+dataset name is /G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM
+year, isData and isSignal are set from the dataset name to 2017, False and False
+False
+isjson
+['GJetsNLO']
+('sample', ['ptrange : 250To400', 'ptrange : 675ToInf', 'weights', 'ptrange : 100To150', 'ptrange : 400To675', 'ptrange : 50To100', 'ptrange : 150To250'])
+('sample', ['ptrange : 250To400', 'ptrange : 675ToInf', 'weights', 'ptrange : 100To150', 'ptrange : 400To675', 'ptrange : 50To100', 'ptrange : 150To250'])
+('/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM', '/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM', 'G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2017_v1')
+('/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM', 1, 0, 4, 4)
+[94m
+== Processing following files:[0m
+/eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/gamma/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/crab_G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2017_v1/240710_110158/0000/out_1.root
+[94m
+== JEC variations: [0m
+['AbsoluteMPFBiasUp', 'AbsoluteMPFBiasDown', 'AbsoluteScaleUp', 'AbsoluteScaleDown', 'FragmentationUp', 'FragmentationDown', 'PileUpDataMCUp', 'PileUpDataMCDown', 'PileUpPtBBUp', 'PileUpPtBBDown', 'PileUpPtHFUp', 'PileUpPtHFDown', 'PileUpPtRefUp', 'PileUpPtRefDown', 'RelativeFSRUp', 'RelativeFSRDown', 'RelativeJERHFUp', 'RelativeJERHFDown', 'RelativePtBBUp', 'RelativePtBBDown', 'RelativePtHFUp', 'RelativePtHFDown', 'RelativeBalUp', 'RelativeBalDown', 'SinglePionECALUp', 'SinglePionECALDown', 'SinglePionHCALUp', 'SinglePionHCALDown', 'FlavorQCDUp', 'FlavorQCDDown', 'TimePtEtaUp', 'TimePtEtaDown', 'AbsoluteStatUp', 'AbsoluteStatDown', 'RelativeJEREC1Up', 'RelativeJEREC1Down', 'RelativeJEREC2Up', 'RelativeJEREC2Down', 'RelativePtEC1Up', 'RelativePtEC1Down', 'RelativePtEC2Up', 'RelativePtEC2Down', 'RelativeSampleUp', 'RelativeSampleDown', 'RelativeStatECUp', 'RelativeStatECDown', 'RelativeStatFSRUp', 'RelativeStatFSRDown', 'RelativeStatHFUp', 'RelativeStatHFDown', 'JERUp', 'JERDown']
+
+('finale state:', 22)
+JEC : Fall17_17Nov2017_V32_MC	 JER : Fall17_V3_MC
+MET branch : MET
+[94m
+== Creating output file:[0m
+/srv/.//myCampaign_gap/GJetsNLO_all/TEST//2017/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2017_v1//Skimmed_1_0.root
+
+('finale state:', 22)
+/srv
+Will write selected trees to /srv
+Loading jet energy scale (JES) uncertainties from file '/tmp/tmpyOVY0E/Fall17_17Nov2017_V32_MC_UncertaintySources_AK4PFchs.txt'
+Loading jet energy resolutions (JER) from file '/tmp/tmpwUnjIl/Fall17_V3_MC_PtResolution_AK4PFchs.txt'
+Loading JER scale factors and uncertainties from file '/tmp/tmpwUnjIl/Fall17_V3_MC_SF_AK4PFchs.txt'
+Pre-select 198523 entries out of 355151 (55.90%)
+nanoAODv5 or higher: True
+Processed    10000/  198523 entries,  5.04% (elapsed time  3489.2s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted     8199/   10001 events (81.98%)
+Processed    20000/  198523 entries, 10.07% (elapsed time  7028.9s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted    16397/   20001 events (81.98%)
+Processed    30000/  198523 entries, 15.11% (elapsed time 10821.3s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted    24600/   30001 events (82.00%)
+Processed    40000/  198523 entries, 20.15% (elapsed time 13623.3s, curr speed    0.004 kHz, avg speed    0.003 kHz), accepted    32792/   40001 events (81.98%)
+Processed    50000/  198523 entries, 25.19% (elapsed time 16155.1s, curr speed    0.004 kHz, avg speed    0.003 kHz), accepted    40936/   50001 events (81.87%)
+Processed    60000/  198523 entries, 30.22% (elapsed time 18964.1s, curr speed    0.004 kHz, avProcessed    70000/  245999 entries, 28.46% (elapsed time 15533.2s, curr speed    0.004 kHz, avg speed    0.005 kHz), accepted    58112/   70001 events (83.02%)
+Processed    80000/  245999 entries, 32.52% (elapsed time 18159.8s, curr speed    0.004 kHz, avg speed    0.004 kHz), accepted    66398/   80001 events (83.00%)
+Processed    90000/  245999 entries, 36.59% (elapsed time 20924.1s, curr speed    0.004 kHz, avg speed    0.004 kHz), accepted    74679/   90001 events (82.98%)
+Processed   100000/  245999 entries, 40.65% (elapsed time 23620.6sProcessed   100000/  198523 entries, 50.37% (elapsed time 32387.2s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted    82076/  100001 events (82.08%)
+Processed   110000/  198523 entries, 55.41% (elapsed time 35500.1s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted    90320/  110001 events (82.11%)
+Processed   120000/  198523 entries, 60.45% (elapsed time 38731.9s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted    98544/  120001 events (82.12%)
+Processed   130000/  198523 entries, 65.48% (elapsed time 41910.6s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted   106779/  130001 events (82.14%)
+Processed   140000/  198523 entries, 70.52% (elapsed time 45679.6s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted   115020/  140001 events (82.16%)
+Processed   150000/  198523 entries, 75.56% (elapsed time 49395.7s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted   123260/  150001 events (82.17%)
+Processed   160000/  198523 entries, 80.60% (elapsed time 53359.2s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted   131485/  160001 events (82.18%)
+Processed   170000/  198523 entries, 85.63% (elapsed time 57433.2s, curr speed    0.002 kHz, avg speed    0.003 kHz), accepted   139660/  170001 events (82.15%)
+Processed   180000/  198523 entries, 90.67% (elapsed time 61483.0s, curr speed    0.002 kHz, avg speed    0.003 kHz), accepted   147875/  180001 events (82.15%)
+Processed   190000/  198523 entries, 95.71% (elapsed time 65415.7s, curr speed    0.003 kHz, avg speed    0.003 kHz), accepted   156033/  190001 events (82.12%)
+[33m... Writing output Tree: Events_AbsoluteMPFBiasUp ...[0m (166098 entries)
+[33m... Writing output Tree: Events_AbsoluteMPFBiasDown ...[0m (165340 entries)
+[33m... Writing output Tree: Events_AbsoluteScaleUp ...[0m (165882 entries)
+[33m... Writing output Tree: Events_AbsoluteScaleDown ...[0m (165594 entries)
+[33m... Writing output Tree: Events_FragmentationUp ...[0m (165885 entries)
+[33m... Writing output Tree: Events_FragmentationDown ...[0m (165585 entries)
+[33m... Writing output Tree: Events_PileUpDataMCUp ...[0m (166537 entries)
+[33m... Writing output Tree: Events_PileUpDataMCDown ...[0m (164944 entries)
+[33m... Writing output Tree: Events_PileUpPtBBUp ...[0m (165742 entries)
+[33m... Writing output Tree: Events_PileUpPtBBDown ...[0m (165720 entries)
+[33m... Writing output Tree: Events_PileUpPtHFUp ...[0m (165772 entries)
+[33m... Writing output Tree: Events_PileUpPtHFDown ...[0m (165695 entries)
+[33m... Writing output Tree: Events_PileUpPtRefUp ...[0m (165844 entries)
+[33m... Writing output Tree: Events_PileUpPtRefDown ...[0m (165614 entries)
+[33m... Writing output Tree: Events_RelativeFSRUp ...[0m (165403 entries)
+[33m... Writing output Tree: Events_RelativeFSRDown ...[0m (166075 entries)
+[33m... Writing output Tree: Events_RelativeJERHFUp ...[0m (165979 entries)
+[33m... Writing output Tree: Events_RelativeJERHFDown ...[0m (165496 entries)
+[33m... Writing output Tree: Events_RelativePtBBUp ...[0m (165733 entries)
+[33m... Writing output Tree: Events_RelativePtBBDown ...[0m (165722 entries)
+[33m... Writing output Tree: Events_RelativePtHFUp ...[0m (165945 entries)
+[33m... Writing output Tree: Events_RelativePtHFDown ...[0m (165532 entries)
+[33m... Writing output Tree: Events_RelativeBalUp ...[0m (165526 entries)
+[33m... Writing output Tree: Events_RelativeBalDown ...[0m (165961 entries)
+[33m... Writing output Tree: Events_SinglePionECALUp ...[0m (1655Adding file/srv/out_1_Skim.root
+MergingTotalNumbers
+MergingEvents_AbsoluteMPFBiasUp
+MergingEvents_AbsoluteMPFBiasDown
+MergingEvents_AbsoluteScaleUp
+MergingEvents_AbsoluteScaleDown
+MergingEvents_FragmentationUp
+MergingEvents_FragmentationDown
+MergingEvents_PileUpDataMCUp
+MergingEvents_PileUpDataMCDown
+MergingEvents_PileUpPtBBUp
+MergingEvents_PileUpPtBBDown
+MergingEvents_PileUpPtHFUp
+MergingEvents_PileUpPtHFDown
+MergingEvents_PileUpPtRefUp
+MergingEvents_PileUpPtRefDown
+MergingEvents_RelativeFSRUp
+MergingEvents_RelativeFSRDown
+MergingEvents_RelativeJERHFUp
+MergingEvents_RelativeJERHFDown
+MergingEvents_RelativePtBBUp
+MergingEvents_RelativePtBBDown
+MergingEvents_RelativePtHFUp
+MergingEvents_RelativePtHFDown
+MergingEvents_RelativeBalUp
+MergingEvents_RelativeBalDown
+MergingEvents_SinglePionECALUp
+MergingEvents_SinglePionECALDown
+MergingEvents_SinglePionHCALUp
+MergingEvents_SinglePionHCALDown
+MergingEvents_FlavorQCDUp
+MergingEvents_FlavorQCDDown
+MergingEvents_TimePtEtaUp
+MergingEvents_TimePtEtaDown
+MergingEvents_AbsoluteStatUp
+MergingEvents_AbsoluteStatDown
+MergingEvents_RelativeJEREC1Up
+MergingEvents_RelativeJEREC1Down
+MergingEvents_RelativeJEREC2Up
+MergingEvents_RelativeJEREC2Down
+MergingEvents_RelativePtEC1Up
+MergingEvents_RelativePtEC1Down
+MergingEvents_RelativePtEC2Up
+MergingEvents_RelativePtEC2Down
+MergingEvents_RelativeSampleUp
+MergingEvents_RelativeSampleDown
+MergingEvents_RelativeStatECUp
+MergingEvents_RelativeStatECDown
+MergingEvents_RelativeStatFSRUp
+MergingEvents_RelativeStatFSRDown
+MergingEvents_RelativeStatHFUp
+MergingEvents_RelativeStatHFDown
+MergingEvents_JERUp
+MergingEvents_JERDown
+MergingEvents
+MergingRuns
+MergingParameterSets
+MergingLuminosityBlocks
+MergingMetaData
+MergingnEventsGenWeighted
+MergingwgtSum
+Mergingcutflow
+MergingnEvents
+Merginguntagged
+Mergingnwgts
+Events_RelativeFSRDown ...[0m (198452 entries)
+[33m... Writing output Tree: Events_RelativeJERHFUp ...[0m (198220 entries)
+[33m... Writing output Tree: Events_RelativeJERHFDown ...[0m (197915 entries)
+[33m... Writing output Tree: Events_RelativePtBBUp ...[0m (198036 entries)
+[33m... Writing output Tree: Events_RelativePtBBDown ...[0m (198083 entries)
+[33m... Writing output Tree: Events_RelativePtHFUp ...[0m (198056 entries)
+[33m... Writing output Tree: Events_RelativePtHFDown ...[0m (198078 entries)
+[33m... Writing output Tree: Events_RelativeBalUp ...[0m (197397 entries)
+[33m... Writing output Tree: Events_RelativeBalDown ...[0m (198652 entries)
+[33m... Writing output Tree: Events_SinglePionECALUp ...[0m (197858 entries)
+[33m... Writing output Tree: Events_SinglePionECALDown ...[0m (198273 entries)
+[33m... Writing output Tree: Events_SinglePionHCALUp ...[0m (198003 entries)
+[33m... Writing output Tree: Events_SinglePionHCALDown ...[0m (198133 entries)
+[33m... Writing output Tree: Events_FlavorQCDUp ...[0m (199491 entries)
+[33m... Writing output Tree: Events_FlavorQCDDown ...[0m (196478 entries)
+[33m... Writing output Tree: Events_TimePtEtaUp ...[0m (198696 entries)
+[33m... Writing output Tree: Events_TimePtEtaDown ...[0m (197303 entries)
+[33m... Writing output Tree: Events_AbsoluteStatUp ...[0m (198187 entries)
+[33m... Writing output Tree: Events_AbsoluteStatDown ...[0m (197937 entries)
+[33m... Writing output Tree: Events_RelativeJEREC1Up ...[0m (198312 entries)
+[33m... Writing output Tree: Events_RelativeJEREC1Down ...[0m (197823 entries)
+[33m... Writing output Tree: Events_RelativeJEREC2Up ...[0m (198340 entries)
+[33m... Writing output Tree: Events_RelativeJEREC2Down ...[0m (197775 entries)
+[33m... Writing output Tree: Events_RelativePtEC1Up ...[0m (198059 entries)
+[33m... Writing output Tree: Events_RelativePtEC1Down ...[0m (198075 entries)
+[33m... Writing output Tree: Events_RelativePtEC2Up ...[0m (198055 entries)
+[33m... Writing output Tree: Events_RelativePtEC2Down ...[0m (198077 entries)
+[33m... Writing output Tree: Events_RelativeSampleUp ...[0m (198347 entries)
+[33m... Writing output Tree: Events_RelativeSampleDown ...[0m (197727 entries)
+[33m... Writing output Tree: Events_RelativeStatECUp ...[0m (198212 entries)
+[33m... Writing output Tree: Events_RelativeStatECDown ...[0m (197920 entries)
+[33m... Writing output Tree: Events_RelativeStatFSRUp ...[0m (198154 entries)
+[33m... Writing output Tree: Events_RelativeStatFSRDown ...[0m (197961 entries)
+[33m... Writing output Tree: Events_RelativeStatHFUp ...[0m (198134 entries)
+[33m... Writing output Tree: Events_RelativeStatHFDown ...[0m (198001 entries)
+[33m... Writing output Tree: Events_JERUp ...[0m (197597 entries)
+[33m... Writing output Tree: Events_JERDown ...[0m (198537 entries)
+Processed 245999 preselected entries from /eos/cms/store/group/phys_smp/vbfA/yian_gap_update/crab/gamma/G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8/crab_G1Jet_LHEGpT-400To675_TuneCP5_13TeV-amcatnlo-pythia8_2016_v1_preVFP/240710_114325/0000/out_1.root (440567 entries). Finally selected 204099 entries
+Done /srv/out_1_Skim.root
+Total time 86036.7 sec. to process 440567 events. Rate = 5.1 Hz.
+[01m[33m
+... DONE ![0m
+total 34704464
+-rw-r--r--. 1 65534 65534        8139 Aug  5 12:41 .machine.ad
+-rw-r--r--. 1 65534 65534        6964 Aug  5 12:41 .job.ad
+-rwx------. 1 yian  zh             48 Aug  5 12:41 .chirp.config
+drwx------. 3 yian  zh             17 Aug  5 12:41 var
+drwx------. 2 yian  zh              6 Aug  5 12:41 tmp
+drwx------. 2 yian  zh              6 Aug  5 12:41 srv
+srwxr-xr-x. 1 yian  zh              0 Aug  5 12:41 .docker_sock
+drwxrwxrwt. 2 yian  zh              6 Aug  5 12:41 var_tmp
+drwxr-x---. 6 yian  zh             51 Aug  5 12:41 scratch
+drwxr-xr-x. 1 yian  zh             80 Aug  5 12:41 ..
+drwxr-xr-x. 3 yian  zh             34 Aug  5 12:41 myCampaign_gap
+-rw-------. 1 yian  zh           3588 Aug  5 21:31 yian.cc
+-rw-r--r--. 1 yian  zh           8016 Aug  6 12:28 .update.ad
+drwx------. 8 yian  zh           4096 Aug  6 12:28 .
+-rw-r--r--. 1 yian  zh    35537333367 Aug  6 12:35 out_1_Skim.root
+total 34704464
+-rw-r--r--. 1 65534 65534        8139 Aug  5 12:41 .machine.ad
+-rw-r--r--. 1 65534 65534        6964 Aug  5 12:41 .job.ad
+-rwx------. 1 yian  zh             48 Aug  5 12:41 .chirp.config
+drwx------. 3 yian  zh             17 Aug  5 12:41 var
+drwx------. 2 yian  zh              6 Aug  5 12:41 tmp
+drwx------. 2 yian  zh              6 Aug  5 12:41 srv
+srwxr-xr-x. 1 yian  zh              0 Aug  5 12:41 .docker_sock
+drwxrwxrwt. 2 yian  zh              6 Aug  5 12:41 var_tmp
+drwxr-x---. 6 yian  zh             51 Aug  5 12:41 scratch
+drwxr-xr-x. 1 yian  zh             80 Aug  5 12:41 ..
+drwxr-xr-x. 3 yian  zh             34 Aug  5 12:41 myCampaign_gap
+-rw-------. 1 yian  zh           3588 Aug  5 21:31 yian.cc
+-rw-r--r--. 1 yian  zh           8016 Aug  6 12:28 .update.ad
+-rw-r--r--. 1 yian  zh    35537333367 Aug  6 12:35 out.root
+drwx------. 8 yian  zh           4096 Aug  6 12:36 .
+directory .//myCampaign_gap/GJetsNLO_all/TEST/
+total 0
+drwxr-xr-x. 3 yian zh 82 Aug  5 12:41 2016
+drwxr-xr-x. 3 yian zh 26 Aug  5 12:41 ..
+drwxr-xr-x. 3 yian zh 26 Aug  5 12:41 .
