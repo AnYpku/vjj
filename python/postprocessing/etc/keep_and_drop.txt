@@ -14,6 +14,7 @@ keep nGen*
 keep Pileup*
 keep PV*
 keep HLT_Photon*
+keep HLT_Diphoton*
 keep HLT_PFJet*
 keep HLT_Ele*
 keep HLT_Mu17*

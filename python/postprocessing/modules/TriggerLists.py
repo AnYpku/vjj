@@ -16,7 +16,7 @@ def defineTriggerList( year ):
                'highpta' : ['HLT_Photon200'],
                'ee'      : ['HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL'],
                'mm'      : ['HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_mass3p8','HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_mass8']},
-        2018: {'ajj'     : ['HLT_Photon75_R9Id90_HE10_IsoM_EBOnly_PFJetsMJJ300DEta3'],
+        2018: {'ajj'     : ['HLT_Diphoton30_18_R9IdL_AND_HE_AND_IsoCaloId_NoPixelVeto'], #['HLT_Photon75_R9Id90_HE10_IsoM_EBOnly_PFJetsMJJ300DEta3'],
                'highpta' : ['HLT_Photon200'],
                'ee'      : ['HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL'],
                'mm'      : ['HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_mass3p8']}

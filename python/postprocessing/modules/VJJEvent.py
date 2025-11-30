@@ -4,7 +4,7 @@ import copy
 
 _defaultObjCfg={'min_leptonPt':20,
                 'max_leptonEta':2.5,
-                'min_photonPt':150,
+                'min_photonPt':20,
                 'max_photonEta':2.5,
                 'min_jetPt':15,
                 'max_jetEta':4.7,
@@ -29,7 +29,7 @@ _defaultGenVjjCfg={'max_jetEta':4.7,
                    'min_leptonPt':20.,
                    'max_leptonEta':2.5,
                    'max_photonEta':2.4,
-                   'min_photonPt': 150.
+                   'min_photonPt': 20.
 }
 
 
@@ -73,6 +73,12 @@ class VJJEvent:
                   'effWgt',  'effWgtUp',  'effWgtDn',
                   'qglqWgt', 'qglgWgt', 
                   'v_pt', 'v_eta', 'v_phi', 'v_m', 'v_ystar', 
+                  #### Add for vbs gg
+                  'lead_a_pt','lead_a_eta','lead_a_phi','lead_a_m',
+                  'sublead_a_pt','sublead_a_eta','sublead_a_phi','sublead_a_m',
+                  'sublead_dr2lead_a','sublead_dphilead_a','sublead_detalead_a','sublead_dr2sublead_a','sublead_dphisublead_a','sublead_detasublead_a',
+                  'lead_dr2lead_a','lead_dphilead_a','lead_detalead_a','lead_dr2sublead_a','lead_dphisublead_a','lead_detasublead_a',
+                  #### Add for vbs gg
                   'lead_pt', 'lead_eta', 'lead_phi', 'lead_m', 'lead_qgl', 'lead_dr2v','lead_dphiv','lead_detav',
                   'sublead_pt','sublead_eta','sublead_phi', 'sublead_m', 'sublead_qgl', 'sublead_dr2v','sublead_dphiv','sublead_detav','lead_puId','sublead_puId',
                   'j_maxAbsEta','j_minAbsEta',
@@ -102,9 +108,10 @@ class VJJEvent:
         if not isGen:
             setattr(self,'photonExtra',['mvaID_WP80','mvaID_WP90','cutBased','r9','sieie','vidNestedWPBitmap','hoe','pfRelIso03_all','pfRelIso03_chg'])
             for v in self.photonExtra:
-                outv=self.pfix+'a_'+v
-                self.outvars.append(outv)
-                self.out.branch(outv,'F', limitedPrecision=False)
+                for label in ["lead_a","sublead_a"]:
+                    outv=self.pfix+label+'_'+v
+                    self.outvars.append(outv)
+                    self.out.branch(outv,'F', limitedPrecision=False)
 
         # integer variables
         for v in ['nwgt', 'fs', 'trig', 'nextraj','ncentj', 'lead_flav', 'sublead_flav']:
@@ -132,13 +139,13 @@ class VJJEvent:
         self.out.fillBranch(self.pfix+'leadlep_phi',   leptons[0].phi)
         self.out.fillBranch(self.pfix+'subleadlep_phi',leptons[1].phi)
 
-
     def fillPhotonExtraBranches(self, photon):
 
         """ special photon variables, they are defined by makeBranches """
 
         for v in self.photonExtra:
-            self.out.fillBranch(self.pfix+'a_'+v,getattr(photon,v))
+            for label,pho in zip(["lead_a","sublead_a"],photon):
+            	self.out.fillBranch(self.pfix+label+'_'+v,getattr(pho,v))
 
 
     def fillWeightBranches(self, wgt_dict):
@@ -149,7 +156,7 @@ class VJJEvent:
             self.out.fillBranch(self.pfix+key,val)
 
 
-    def isGoodVJJ(self, v, jets, trigCats, fsCat ):
+    def isGoodVJJ(self, good_objs, jets, trigCats, fsCat ):
 
         """ fill the branches """
 
@@ -160,6 +167,17 @@ class VJJEvent:
         self.out.fillBranch(self.pfix+'trig', trigWord)
 
         self.out.fillBranch(self.pfix+'fs',   fsCat)
+
+        ##### Add for vbs gg
+        if len(good_objs)<2: return False
+        v=good_objs[0].p4()+good_objs[1].p4()
+        
+        for label,obj in zip(["lead_a","sublead_a"],good_objs):
+            self.out.fillBranch(self.pfix+label+"_pt",obj.pt)
+            self.out.fillBranch(self.pfix+label+"_eta",obj.eta)
+            self.out.fillBranch(self.pfix+label+"_phi",obj.phi)
+            self.out.fillBranch(self.pfix+label+"_m",obj.mass)
+        ##### Add for vbs gg
 
         #boson selection (base variables)
         self.out.fillBranch(self.pfix+'v_pt',v.Pt())
@@ -206,6 +224,15 @@ class VJJEvent:
         self.out.fillBranch(self.pfix+'sublead_eta',  tagJets[1].eta)
         self.out.fillBranch(self.pfix+'sublead_phi',  tagJets[1].phi)
         self.out.fillBranch(self.pfix+'sublead_m',    tagJets[1].mass)
+
+        for label,obj in zip(["lead_a","sublead_a"],good_objs):
+            self.out.fillBranch(self.pfix+'lead_dr2'+label, tagJets[0].DeltaR(obj.p4()))
+            self.out.fillBranch(self.pfix+'lead_dphi'+label,   tagJets[0].p4().DeltaPhi(obj.p4()))
+            self.out.fillBranch(self.pfix+'lead_deta'+label,   abs(tagJets[0].eta-obj.eta))
+            self.out.fillBranch(self.pfix+'sublead_dr2'+label, tagJets[1].DeltaR(obj.p4()))
+            self.out.fillBranch(self.pfix+'sublead_dphi'+label,   tagJets[1].p4().DeltaPhi(obj.p4()))
+            self.out.fillBranch(self.pfix+'sublead_deta'+label,   abs(tagJets[1].eta-obj.eta))
+
         self.out.fillBranch(self.pfix+'sublead_dr2v', tagJets[1].DeltaR(v))
         self.out.fillBranch(self.pfix+'sublead_dphiv',   tagJets[1].p4().DeltaPhi(v))
         self.out.fillBranch(self.pfix+'sublead_detav',   abs(tagJets[1].eta-v.Eta()))
@@ -221,7 +248,9 @@ class VJJEvent:
         #dijet system
         jj=tagJets[0].p4()+tagJets[1].p4()
         jj_m=jj.M()
-        if(jj_m<self.selCfg['min_mjj']) : return False
+        #if(jj_m<self.selCfg['min_mjj']) : return False
+        if(jj_m<100) : return False
+        #print(self.pfix,"number of photons",len(good_objs),good_objs[0].pt,good_objs[1].pt,v.M(),"jj invariant mass",jj_m)
         self.out.fillBranch(self.pfix+'jj_m',    jj_m)
         self.out.fillBranch(self.pfix+'jj_pt',   jj.Pt())
         self.out.fillBranch(self.pfix+'jj_eta',  jj.Eta())

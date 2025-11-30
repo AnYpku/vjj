@@ -117,10 +117,11 @@ class VJJSelector(Module):
                 if goodZ:
                     return self.fs,[1,1],v4
         else:
-            if len(good_objs)>0:
+            if len(good_objs)> 1: # 0:
                 isAjj     = 1 if (trig_cats and trig_cats.count('ajj')>0)     else 0
                 isHighPtA = 1 if (trig_cats and trig_cats.count('highpta')>0) else 0
-                return self.fs,[isAjj,isHighPtA],good_objs[0].p4()
+                #return self.fs,[isAjj,isHighPtA],good_objs[0].p4()
+                return self.fs,[isAjj,isHighPtA],good_objs
         return None
 
 
@@ -232,7 +233,8 @@ class VJJSelector(Module):
 
         #add MC information for final states
         if abs(self.fs) == 22:    
-            self.out.fillBranch('genvjj_hasPromptPhoton',True if len(good_obj)>0 else False)
+            #self.out.fillBranch('genvjj_hasPromptPhoton',True if len(good_obj)>0 else False)
+            self.out.fillBranch('genvjj_hasPromptPhoton',True if len(good_obj)>1 else False)
         else: 
             self.gen_vjjEvent.fillZextraBranches(good_obj)
 
@@ -281,8 +283,10 @@ class VJJSelector(Module):
         elif self.fs == 121:
             good_obj  = [all_ele[i] for i in good_eleIdx]       
         elif abs(self.fs) == 22:
-            if len( good_phoIdx) > 0:
-                good_obj  = [all_pho[i] for i in [good_phoIdx[0]]]
+            #if len( good_phoIdx) > 0:
+            #    good_obj  = [all_pho[i] for i in [good_phoIdx[0]]]
+            if len( good_phoIdx) > 1:
+                good_obj  = [all_pho[i] for i in good_phoIdx]
         
         bosonArbitration = self.BosonSelection(good_obj,self.fs,trig_cats)
 
@@ -313,16 +317,20 @@ class VJJSelector(Module):
         
         #### make the CR similar with the SR
         for j in jets:
-            if j.DeltaR(boson) < self.vjjEvent.selCfg['min_jetdr2v']: continue
+            #if j.DeltaR(boson) < self.vjjEvent.selCfg['min_jetdr2v']: continue
+            for obj in boson:
+                if j.DeltaR(obj) < self.vjjEvent.selCfg['min_jetdr2v']: continue
             cleanJets.append(j)
         ####
          
         #analyze v+2j event candidate
         isGoodV2J =  self.vjjEvent.isGoodVJJ(boson, cleanJets, arbTrigCats, fsCat) 
+        #print("After TEST",boson[0].pt,boson[1].pt,isGoodV2J,"HLT",event.HLT_Diphoton30_18_R9IdL_AND_HE_AND_IsoCaloId_NoPixelVeto)
  
         #add additional variables
         if abs(fsCat) == 22:
-            self.vjjEvent.fillPhotonExtraBranches(good_obj[0])
+            #self.vjjEvent.fillPhotonExtraBranches(good_obj[0])
+            self.vjjEvent.fillPhotonExtraBranches(good_obj)
         else:
             self.vjjEvent.fillZextraBranches(good_obj)
 

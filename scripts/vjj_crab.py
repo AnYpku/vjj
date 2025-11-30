@@ -128,7 +128,7 @@ def create_config_files(outdir, fs):
         f.write('from UserCode.VJJSkimmer.etc import crab_cfg\n')
         f.write('config = crab_cfg.config\n')
         f.write('config.Data.allowNonValidInputDataset = True\n')
-        f.write("config.Data.outLFNDirBase = '/store/group/phys_smp/vbfA/yian_gap_update/{0}'\n".format(outdir)) #USER-SPECIFIC PATH #Verify write permissions, e.g. with: [crab checkwrite --lfn=/store/group/phys_smp/vbfA --site T2_CH_CERN]
+        f.write("config.Data.outLFNDirBase = '/store/group/phys_smp/vbfA/yian_vbs_gg/{0}'\n".format(outdir)) #USER-SPECIFIC PATH #Verify write permissions, e.g. with: [crab checkwrite --lfn=/store/group/phys_smp/vbfA --site T2_CH_CERN]
 #        f.write("config.Data.outLFNDirBase = '/store/group/phys_smp/vbfA/yian_gap_update/{0}'\n".format(outdir)) #USER-SPECIFIC PATH #Verify write permissions, e.g. with: [crab checkwrite --lfn=/store/group/phys_smp/vbfA --site T2_CH_CERN]
         f.write("config.JobType.scriptArgs.append('--finalState={0}')\n".format(fs))
 

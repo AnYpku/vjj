@@ -34,7 +34,8 @@ class PhotonSelector(ScaleFactorBase , ObjectSelectorBase):
                 'pxseed' : (os.path.join(baseSFDir,'HasPix_SummaryPlot_UL17.root'),                      'TightID/SF_HasPix_TightID'),
                 },
             2018:{
-                'id'     : (os.path.join(baseSFDir,'egammaEffi.txt_EGM2D_PHO_Tight_UL18.root'),          'EGamma_SF2D'),
+                #'id'     : (os.path.join(baseSFDir,'egammaEffi.txt_EGM2D_PHO_Tight_UL18.root'),          'EGamma_SF2D'),
+                'id'     : (os.path.join(baseSFDir,'egammaEffi.txt_EGM2D_Pho_Med_UL18.root'),          'EGamma_SF2D'),
                 'pxseed' : (os.path.join(baseSFDir,'HasPix_SummaryPlot_UL18.root'),                      'TightID/SF_HasPix_TightID'),
                 }
         }
@@ -64,7 +65,7 @@ class PhotonSelector(ScaleFactorBase , ObjectSelectorBase):
 
         if self.apply_id:
             hasId= False
-            hasId= photon.cutBased == 3
+            hasId= photon.cutBased == 2 #3
             if not hasId:
                 return False
 
